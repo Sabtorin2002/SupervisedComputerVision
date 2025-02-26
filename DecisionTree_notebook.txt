@@ -1,0 +1,139 @@
+IMAGE_SIZE=(64,64), BATCH_SIZE=32
+
+dt_model = DecisionTreeClassifier(max_depth=7, criterion='gini', random_state=42)
+Accuracy: 0.23404255319148937, Hamming Distance: 0.7659574468085106
+
+dt_model = DecisionTreeClassifier(max_depth=7, criterion='gini', random_state=42, min_samples_leaf=2, min_samples_split=5,
+                                  class_weight='balanced', splitter='best')
+Accuracy: 0.14285714285714285, Hamming Distance: 0.8571428571428571
+
+dt_model = DecisionTreeClassifier(max_depth=7, criterion='gini', random_state=42, min_samples_leaf=2, min_samples_split=5,
+                                  class_weight='balanced', splitter='random')
+Accuracy: 0.1641337386018237, Hamming Distance: 0.8358662613981763
+
+dt_model = DecisionTreeClassifier(max_depth=7, criterion='entropy', random_state=42, min_samples_leaf=2, max_leaf_nodes=50,
+                                  min_samples_split=5, class_weight='balanced', splitter='random')
+Accuracy: 0.1337386018237082, Hamming Distance: 0.8662613981762918
+
+dt_model = DecisionTreeClassifier(max_depth=7, criterion='gini', random_state=42, min_samples_leaf=2, max_leaf_nodes=10,
+                                  min_samples_split=2)
+Accuracy: 0.1580547112462006, Hamming Distance: 0.8419452887537994
+
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='entropy', random_state=42, min_samples_leaf=2, max_leaf_nodes=20,
+                                  min_samples_split=5, class_weight='balanced', splitter='best')
+Accuracy: 0.1398176291793313, Hamming Distance: 0.8601823708206687
+
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='log_loss', random_state=42, min_samples_leaf=2, max_leaf_nodes=20,
+                                  min_samples_split=2, class_weight='balanced', splitter='best')
+Accuracy: 0.1398176291793313, Hamming Distance: 0.8601823708206687
+
+
+
+IMAGE_SIZE=(128,128), BATCH_SIZE=32
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='gini', random_state=42, min_samples_leaf=2, max_leaf_nodes=50,
+                                  min_samples_split=2)
+Accuracy: 0.25835866261398177, Hamming Distance: 0.7416413373860182
+
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='gini', random_state=42, min_samples_leaf=2, max_leaf_nodes=20,
+                                  min_samples_split=2)
+Accuracy: 0.17325227963525835, Hamming Distance: 0.8267477203647416
+
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='gini', random_state=42, min_samples_leaf=1, max_leaf_nodes=20,
+                                  min_samples_split=2)
+Accuracy: 0.17325227963525835, Hamming Distance: 0.8267477203647416
+
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='gini', random_state=42, min_samples_leaf=2, max_leaf_nodes=100,
+                                  min_samples_split=2)
+Accuracy: 0.2765957446808511, Hamming Distance: 0.723404255319149
+
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='gini', random_state=42, min_samples_leaf=2, max_leaf_nodes=200,
+                                  min_samples_split=2)
+Accuracy: 0.2765957446808511, Hamming Distance: 0.723404255319149
+
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='gini', random_state=42, min_samples_leaf=3, max_leaf_nodes=162,
+                                  min_samples_split=3)
+Accuracy: 0.2796352583586626, Hamming Distance: 0.7203647416413373
+
+
+
+
+IMAGE_SIZE=(256, 256), BATCH_SIZE=32
+
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='gini', random_state=42, min_samples_leaf=3, max_leaf_nodes=162,
+                                  min_samples_split=3)
+Accuracy: 0.16109422492401215, Hamming Distance: 0.8389057750759878
+
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='gini', random_state=42, min_samples_leaf=2, max_leaf_nodes=20,
+                                  min_samples_split=4)
+Accuracy: 0.1641337386018237, Hamming Distance: 0.8358662613981763
+
+
+IMAGE_SIZE=(128, 128), BATCH_SIZE=16
+
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='gini', random_state=42, min_samples_leaf=2, max_leaf_nodes=20,
+                                  min_samples_split=4)
+Accuracy: 0.17325227963525835, Hamming Distance: 0.8267477203647416
+
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='entropy', random_state=42, min_samples_leaf=2, max_leaf_nodes=20,
+                                  min_samples_split=4)
+Accuracy: 0.1337386018237082, Hamming Distance: 0.8662613981762918
+
+dt_model = DecisionTreeClassifier(max_depth=10, criterion='entropy', random_state=42, min_samples_leaf=2, max_leaf_nodes=100,
+                                  min_samples_split=4)
+Accuracy: 0.2553191489361702, Hamming Distance: 0.7446808510638298
+
+dt_model = DecisionTreeClassifier(max_depth=15, criterion='entropy', random_state=42, min_samples_leaf=2, max_leaf_nodes=100,
+                                  min_samples_split=4)
+Accuracy: 0.2553191489361702, Hamming Distance: 0.7446808510638298
+
+dt_model = DecisionTreeClassifier(max_depth=15, criterion='entropy', random_state=42, min_samples_leaf=2, max_leaf_nodes=200,
+                                  min_samples_split=4)
+Accuracy: 0.3617021276595745, Hamming Distance: 0.6382978723404256
+
+dt_model = DecisionTreeClassifier(max_depth=15, criterion='entropy', random_state=42, min_samples_leaf=3, max_leaf_nodes=200,
+                                  min_samples_split=4)
+Accuracy: 0.3586626139817629, Hamming Distance: 0.6413373860182371
+
+dt_model = DecisionTreeClassifier(max_depth=20, criterion='entropy', random_state=42, min_samples_leaf=3, max_leaf_nodes=200,
+                                  min_samples_split=4)
+Accuracy: 0.3586626139817629, Hamming Distance: 0.6413373860182371
+
+dt_model = DecisionTreeClassifier(max_depth=20, criterion='entropy', random_state=42, min_samples_leaf=9, max_leaf_nodes=200,
+                                  min_samples_split=10)
+Accuracy: 0.3465045592705167, Hamming Distance: 0.6534954407294833
+
+
+
+
+
+
+
+
+
+                                
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
